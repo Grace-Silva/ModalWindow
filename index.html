@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Window</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <!-- logo image -->
+        <a href="" class="logo"><img src="./img/logo.png" alt="" class="logoImage"></a>
+
+        <!-- links -->
+        <ul class="navlinks">
+
+           <li> <a href="">Koholint Island</a></li>
+           <li> <a href="">Characters</a></li>
+           <li> <a href="">GamePlay</a></li>
+        </ul>
+
+        <!-- buttons -->
+        <button class="btn">Login<i class="fa-solid fa-user"></i></button>
+
+        <button class="btn">Buy Now<i class="fa-solid fa-cart-shopping"></i></button>
+
+
+    </nav>
+
+    <!--- starts modal window -->
+    <div class="windowBakcground" id="windowBakcground">
+
+        <div class="windowContainer" id="windowContainer">
+
+            <!-- close button -->
+            <button class="closeBtn" id="closeBtn"><i class="fa-solid fa-circle-xmark"></i></button>
+
+            <img src="./img/buy.png" alt="" class="windowImage">
+            
+            <div class="windowText">
+                <h1>Digital Edition</h1>
+
+                <p>Buy the digital version and download it directly to your Nintendo Switch system—no code required!
+                Plus, earn My Nintendo Gold Points you can use toward more games and DLC.</p>
+                <span>$59.99 USD/ $79.99 CAD</span>
+
+                <button class="btn">Buy Now<i class="fa-solid fa-cart-shopping"></i></button>
+                
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!-- ends modal window -->
+
+    <script src="./src/main.js"></script>
+
+</body>
+</html>

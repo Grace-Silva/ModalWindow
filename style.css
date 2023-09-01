@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --nintendoRed: #E60012;
+    --blue: #205BE7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+    color: #FFFFFF;
+}
+
+body{
+    background: radial-gradient(circle, rgba(4,4,4,0.2) 0%, rgba(4,4,4,0.5) 100%), url(./img/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2rem 4rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    width: 180px;
+}
+
+.navbar .logo .logoImage{
+    width: 100%;
+}
+
+.navbar .navlinks{
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.navbar .navlinks li a{
+    font-size: 1.1em;
+    font-weight: 600;
+    border: transparent;
+    padding: 4px 6px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+.navbar .navlinks li a:hover{
+    font-size: 1.2rem;
+    border-bottom: 2px solid white;
+}
+
+.navbar .navlinks li .btn{
+    background-color: red;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all ease .3s;
+}
+.navbar .navlinks li .btn:hover{
+    transform: scale(1.1);
+}
+
+.navbar .navlinks li .loginBtn{
+    background: var(--blue);
+}
+
+

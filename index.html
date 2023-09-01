@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body onload="startCount()">
+<body> <!-- onload = startCount()-->
 
     <nav class="navbar">
 
@@ -21,18 +21,24 @@
            <li> <a href="">Koholint Island</a></li>
            <li> <a href="">Characters</a></li>
            <li> <a href="">GamePlay</a></li>
+
+            <li><button class="btn"><i class="fa-solid fa-cart-plus"></i></button></li>
+
+            <li><button class="btn loginBtn"><i class="fa-solid fa-user"></i></button></li>
+
+
         </ul>
 
         <!-- buttons -->
-        <button class="btn">Login<i class="fa-solid fa-user"></i></button>
+        
 
-        <button class="btn">Buy Now<i class="fa-solid fa-cart-shopping"></i></button>
+        
 
 
     </nav>
 
     <!--- starts modal window -->
-    <div class="windowBakcground" id="windowBackground" style="display: none;">
+    <div class="windowBakcground" id="windowBackground">
 
         <div class="windowContainer" id="windowContainer">
 
@@ -48,12 +54,17 @@
                 Plus, earn My Nintendo Gold Points you can use toward more games and DLC.</p>
                 <span>$59.99 USD/ $79.99 CAD</span>
 
-                <button class="btn">Buy Now<i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="btn">Buy Now<i class="fa-solid fa-cart-plus"></i></button>
                 
             </div>
 
 
         </div>
+
+        <!-- alerta de mensaje -->
+        <audio src="./audio/alert.mp3" id="audioAlert">
+            Audio no Soportado
+        </audio>
 
 
     </div>

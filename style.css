@@ -5,6 +5,8 @@
     --blue: #205BE7;
     --gold: #ab9853;
     --black: #1f1f1f;
+    --orange: #F0A400;
+    --yellow: #D38900;
 }
 
 *{
@@ -63,7 +65,7 @@ body{
 }
 
 .navbar .navlinks li .btn{
-    background-color: red;
+    background-color: var(--nintendoRed);
     font-size: 1.1em;
     font-weight: 600;
     border: none;
@@ -80,6 +82,8 @@ body{
 .navbar .navlinks li .loginBtn{
     background: var(--blue);
 }
+
+
 
 .windowBackground{
     width: 100%;
@@ -109,7 +113,27 @@ body{
     z-index: 10;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.262);
     background: white;
+    animation: appear 1s ease;
 }
+
+@keyframes appear{
+
+    from{
+        transform: translateY(50vh);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.close
+
+
+.close{
+    transition: transform 1s cubic-bezier(0, -0.42, 1, -0.41);
+    transform: translateY(60vh);
+}
+
 
 .windowContainer .windowImage{
     width: 380px;
@@ -121,10 +145,6 @@ body{
 
 .windowContainer .windowText{
     color: var(--black);
-}
-
-.windowContainer .windowText h1, p, span{
-    color: blue;
 }
 
 .windowContainer .windowText h1{
@@ -152,9 +172,13 @@ body{
     font-style: italic;
 }
 
+.windowText .windowButtons{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
 
-.windowContainer .windowText button{
-    display: block;
+.windowContainer .windowText .windowButtons button{
     background: var(--nintendoRed);
     border: none;
     padding: 8px 16px;
@@ -165,19 +189,19 @@ body{
     cursor: pointer;
     transition: all ease .3s;
 }
-.windowContainer .windowText button:hover{
+.windowContainer .windowText .windowButtons button:hover{
     transform: scale(1.1);
 }
 
-.windowContainer .windowText button:last-of-type{
-    display: inline-block;
-    background: green;
+.windowContainer .windowText .windowButtons button:last-of-type{
+    background: var(--yellow);
 }
-
 
 .windowContainer .windowText button i{
     margin-left: 8px;
 }
+
+
 
 .windowContainer .closeBtn{
     background: var(--nintendoRed);
@@ -187,15 +211,17 @@ body{
     text-align: center;
     box-shadow: 0 0px 4px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    transition: all ease .3s;
+    transition: all ease .1s;
     position: absolute;
     top: -16px;
     right: -16px;
 }
 .windowContainer .closeBtn:hover{
     background: var(--black);
+    border: 2px solid var(--gold);
 }
 
 .windowContainer .closeBtn i{
     font-size: 1.1em;
 }
+

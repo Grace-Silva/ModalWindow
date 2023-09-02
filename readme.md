@@ -15,5 +15,5 @@ Este repositorio es un sitio web para el videojuego la Leyenda de Zelda Link's A
 ### Sitio Original
 ![Sitio Original](./img/screenshots/nintendoPage.png)
 
-## Ver en Vivo:
-## Autor: [Grace Silva](https://github.com/Grace-Silva)
+## [Ir al Sitio](https://grace-silva.github.io/ModalWindow/)
+### Autor: [Grace Silva](https://github.com/Grace-Silva)

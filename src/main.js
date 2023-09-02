@@ -12,9 +12,16 @@ function showWindow(){
 }
 
 let closeBtn = document.getElementById("closeBtn");
+let windowContainer = document.getElementById("windowContainer");
 
 closeBtn.addEventListener("click", () => hideWindow());
 
 function hideWindow(){
-    windowBackground.style.display="none";
+
+    windowContainer.classList.add("close");
+
+    setTimeout(() => {
+        windowContainer.classList.remove("close");
+        windowBackground.style.display="none";
+    }, 1000);
 }

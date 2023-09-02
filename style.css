@@ -126,14 +126,10 @@ body{
     }
 }
 
-.close
-
-
 .close{
     transition: transform 1s cubic-bezier(0, -0.42, 1, -0.41);
     transform: translateY(60vh);
 }
-
 
 .windowContainer .windowImage{
     width: 380px;

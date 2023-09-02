@@ -7,8 +7,9 @@ let audioAlert = document.getElementById("audioAlert");
 
 
 function showWindow(){
-    windowBackground.style.display="block";
+    audioAlert.volume = 0.3;
     audioAlert.play();
+    windowBackground.style.display="flex";
 }
 
 let closeBtn = document.getElementById("closeBtn");

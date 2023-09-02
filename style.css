@@ -89,7 +89,7 @@ body{
     left: 0;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -100,17 +100,19 @@ body{
 .windowContainer{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 60vw;
+    color: var(--black);
     border-radius: 16px;
-    background-color: white;
     padding: 2em;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.262);
+    background: white;
 }
 
 .windowContainer .windowImage{
     width: 380px;
-    border: solid green;
 }
 
 .windowContainer .windowImage img{
@@ -118,11 +120,63 @@ body{
 }
 
 .windowContainer .windowText{
-    border: solid blue;    
+    color: var(--black);
 }
+
+.windowContainer .windowText h1, p, span{
+    color: blue;
+}
+
+.windowContainer .windowText h1{
+    display: block;
+    text-align: center;
+    padding: 6px 12px;
+    color: var(--gold);
+    background: var(--black);
+    border: 2px inset var(--gold);
+    margin-bottom: .8em;
+}
+
+.windowContainer .windowText p{
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1.1em;
+    opacity: .8;
+    margin-bottom: .5em;
+}
+
+.windowContainer .windowText span{
+    font-weight: 600;
+    font-size: 1.4em;
+    color: var(--gold);
+    font-style: italic;
+}
+
 
 .windowContainer .windowText button{
     display: block;
+    background: var(--nintendoRed);
+    border: none;
+    padding: 8px 16px;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: .7em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+.windowContainer .windowText button:hover{
+    transform: scale(1.1);
+}
+
+.windowContainer .windowText button:last-of-type{
+    display: inline-block;
+    background: green;
+}
+
+
+.windowContainer .windowText button i{
+    margin-left: 8px;
 }
 
 .windowContainer .closeBtn{

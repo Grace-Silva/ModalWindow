@@ -1,82 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modal Window</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
 
-<body onload="startCount()"> <!-- onload = startCount()-->
+  <body onload="startCount()">
+    <!-- onload = startCount()-->
 
     <nav class="navbar">
+      <!-- logo image -->
+      <a href="" class="logo"
+        ><img src="./img/logo.png" alt="" class="logoImage"
+      /></a>
 
-        <!-- logo image -->
-        <a href="" class="logo"><img src="./img/logo.png" alt="" class="logoImage"></a>
+      <!-- links -->
+      <ul class="navlinks">
+        <li><a href="">Koholint Island</a></li>
+        <li><a href="">Characters</a></li>
+        <li><a href="">GamePlay</a></li>
 
-        <!-- links -->
-        <ul class="navlinks">
+        <li>
+          <button class="btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </li>
 
-           <li> <a href="">Koholint Island</a></li>
-           <li> <a href="">Characters</a></li>
-           <li> <a href="">GamePlay</a></li>
-
-            <li><button class="btn"><i class="fa-solid fa-cart-plus"></i></button></li>
-
-            <li><button class="btn loginBtn"><i class="fa-solid fa-user"></i></button></li>
-
-
-        </ul>
-
-        <!-- buttons -->
-        
-
-        
-
-
+        <li>
+          <button class="btn loginBtn"><i class="fa-solid fa-user"></i></button>
+        </li>
+      </ul>
     </nav>
 
     <!--- starts modal window -->
     <div class="windowBackground" id="windowBackground">
+      <!-- starts windowContainer -->
+      <div class="windowContainer" id="windowContainer">
+        <!-- start close button -->
+        <button class="closeBtn" id="closeBtn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <!-- ends close button -->
 
-        <div class="windowContainer" id="windowContainer">
+        <img src="./img/buy.png" alt="" class="windowImage" />
 
-            <!-- close button -->
-            <button class="closeBtn" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        <!-- starts windowText -->
+        <div class="windowText">
+          <h1>Digital Edition</h1>
 
-            <img src="./img/buy.png" alt="" class="windowImage">
-            
-            <div class="windowText">
-                <h1>Digital Edition</h1>
+          <p>
+            Buy the digital version and download it directly to your Nintendo
+            Switch system—no code required! Plus, earn My Nintendo Gold Points
+            you can use toward more games and DLC.
+          </p>
 
-                <p>Buy the digital version and download it directly to your Nintendo Switch system—no code required!
-                Plus, earn My Nintendo Gold Points you can use toward more games and DLC.</p>
-                <span>$59.99 USD/ $79.99 CAD</span>
+          <span>$59.99 USD/ $79.99 CAD</span>
 
-            <!-- buttons -->
-            <div class="windowButtons">
-                <button class="btn">Buy Now<i class="fa-solid fa-cart-plus"></i></button>
+          <!-- buttons -->
+          <div class="windowButtons">
+            <button class="btn">
+              Buy Now<i class="fa-solid fa-cart-plus"></i>
+            </button>
 
-                <button class="btn">Golden Points<i class="fa-solid fa-star"></i></button>
-            </div>
-            <!-- end buttons -->
-
-            </div>
-
-
+            <button class="btn">
+              Golden Points<i class="fa-solid fa-star"></i>
+            </button>
+          </div>
+          <!-- end buttons -->
         </div>
+        <!-- ends windowText -->
+      </div>
+      <!-- ends windowContainer -->
 
-        <!-- alerta de mensaje -->
-        <audio src="./audio/alert.mp3" id="audioAlert">
-            Audio no Soportado
-        </audio>
-
-
+      <!-- alerta de mensaje -->
+      <audio src="./audio/alert.mp3" id="audioAlert">Audio no Soportado</audio>
     </div>
     <!-- ends modal window -->
 
     <script src="./src/main.js"></script>
-
-</body>
+  </body>
 </html>

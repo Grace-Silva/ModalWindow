@@ -6,5 +6,14 @@ Este repositorio es un sitio web para el videojuego la Leyenda de Zelda Link's A
 
 ## ScreenShots
 ***
+
+### Pantalla Inicial
+![Pantalla Inicial](./img/screenshots/preview.png)
+***
+### 5 segundos depués : Ventana Emergente/Modal
+![5 segundos después](./img/screenshots/5secondsLater.png)
 ### Sitio Original
 ![Sitio Original](./img/screenshots/nintendoPage.png)
+
+## Ver en Vivo:
+## Autor: [Grace Silva](https://github.com/Grace-Silva)
